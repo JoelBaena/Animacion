@@ -15,11 +15,12 @@
         }
 
         .venom {
-            width: 32px;
-            height: 433px;
-            background-image: url('_PRÀCTICA__SMX-MP08-UF5-Pt6-_Animacions_Joel_Baena-removebg-preview.png');
+            width: 32px; /* Ancho de un solo fotograma */
+            height: 100px; /* Ajustado para visibilidad */
+            background-image: url('./_PRÀCTICA__SMX-MP08-UF5-Pt6-_Animacions_Joel_Baena-removebg-preview.png');
             background-repeat: no-repeat;
-            animation: venomRun 1s steps(18) infinite;
+            background-size: auto 100%; /* Ajusta la escala */
+            animation: venomRun 1.5s steps(18) infinite;
         }
 
         @keyframes venomRun {
