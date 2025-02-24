@@ -18,21 +18,17 @@
         }
 
         .venom {
-            width: 300px;
-            height: 600px;
+            width: 1200px;
+            height: 1600px;
             background-image: url('./img/venom.jpg');
             background-repeat: no-repeat;
-            background-size: 3900px 100%;
+            background-size: 100% 100%;
             animation: venomRun 1.5s steps(13) infinite;
         }
 
         @keyframes venomRun {
-            from {
-                background-position: 0px 0;
-            }
-            to {
-                background-position: -3900px 0;
-            }
+            0% { background-position: 0 0; }
+            100% { background-position: 0 -10400px; }
         }
     </style>
 </head>
