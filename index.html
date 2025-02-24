@@ -6,7 +6,7 @@
     <title>Animación de Venom</title>
     <style>
         body {
-            background-image: url('./img/arcade.jpg'); /* Imagen de fondo */
+            background-image: url('./img/arcade.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -18,17 +18,21 @@
         }
 
         .venom {
-            width: 600px; /* Ancho de un solo frame */
-            height: 1200px; /* Alto de la imagen */
-            background-image: url('./img/venom.jpg'); /* Imagen del sprite */
+            width: 900px; /* Ajusta el tamaño para que sea grande */
+            height: 1200px;
+            background-image: url('./img/venom.jpg');
             background-repeat: no-repeat;
-            background-size: 6000px 100%; /* 20 frames * 300px de ancho */
-            animation: venomRun 2s steps(20) infinite;
+            background-size: 2000px 100%; /* 20 frames en horizontal */
+            animation: venomRun 2s steps(20) infinite; /* 20 frames, cada 0.1s */
         }
 
         @keyframes venomRun {
-            from { background-position: 0 0; }
-            to { background-position: -6000px 0; } /* Se desplaza por los 20 frames */
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -2000px 0; /* Se desplaza a la izquierda mostrando los frames */
+            }
         }
     </style>
 </head>
