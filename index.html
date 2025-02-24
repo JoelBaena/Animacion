@@ -18,11 +18,11 @@
         }
 
         .venom {
-            width: 900px; /* Ajusta el tamaño para que sea grande */
-            height: 1200px;
+            width: 539px; /* Tamaño correcto del sprite (con 20 fotogramas) */
+            height: 32px; /* Altura de un fotograma */
             background-image: url('./img/venom.jpg');
             background-repeat: no-repeat;
-            background-size: 2000px 100%; /* 20 frames en horizontal */
+            background-size: 5390px 32px; /* 20 frames en horizontal */
             animation: venomRun 2s steps(20) infinite; /* 20 frames, cada 0.1s */
         }
 
@@ -31,7 +31,7 @@
                 background-position: 0 0;
             }
             to {
-                background-position: -2000px 0; /* Se desplaza a la izquierda mostrando los frames */
+                background-position: -5390px 0; /* Desplazamiento de la imagen para mostrar cada fotograma */
             }
         }
     </style>
